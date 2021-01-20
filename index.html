@@ -6,50 +6,112 @@ This web page contains the home of Web Development Agency, Knight's Code
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knight's Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
+    <!-- Main Site Navigation -->
+    <nav>
+        <ul>
+            <a href="index.html" class="active">
+                <span class="material-icons"> home </span>
+                Home
+            </a>
+        </ul>
+        <ul> <a href="about.html">
+                <span class="material-icons"> info </span>
+                About
+            </a> </ul>
+        <ul> <a href="contact.html">
+                <span class="material-icons"> chat </span>
+                Contact
+            </a> </ul>
+        <ul> <a href="gallery.html">
+                <span class="material-icons"> collections </span>
+                Gallery
+            </a> </ul>
+        <ul> <a href="services.html">
+                <span class="material-icons"> home_repair_service </span>
+                Services
+            </a> </ul>
+    </nav>
     <!-- Organization Title and Logo -->
+    <section>
+        <img src="./img/banner.png" id="banner" alt="Knight's Code banner image. " />
+    </section>
     <header>
         <h1> Knight's Code </h1>
-        <img src="./img/logo.png" alt="Pixelated Knight with Binary Overlay. " />
-
     </header>
-    <!-- Main Site Navigation -->
-    <nav> 
-        <a href="#"> Home </a>
-        <a href="#"> About </a>
-        <a href="#"> Services </a>
-        <a href="#"> Contact </a>
-    </nav>
     <!-- Content area :: Customer Testimonies  -->
-    <section>
-        <h2> Customer Testimonies </h2>
-        <div> 
-            <h3> Dwight Shrute </h3> 
-            <p> Knight's Code made a beautiful website for my beet farm. I really appreciate the work they did. I'm attracting more customers than ever. </p>
-        </div>
-        <div> 
-            <h3> Jim Halpert </h3> 
-            <p> We needed an extensive web application and Knight's Code certainly delivered. </p>
-        </div>
-        <div> 
-            <h3> Michael Scott </h3> 
-            <p> I'm still amazed by how awesome the website they made for me is. So cool. </p>
-        </div>
-    </section>
+
     <!-- Content area :: What we do. -->
     <article>
-        <h2> Knight's Code :: Charged with Creating Beautiful Code </h2>
-        <p> Our company was made with the intention of creating powerful and aestically pleasing websites. </p>
+
+        <div class="article-section"> 
+            <div class="article-section-text">
+                <h2> Custom Business Software Solutions </h2>
+                <p> We take you problems and craft best-practice software solutions. </p>
+                <button> Software </button>
+            </div>
+            <img src="./img/software.png" alt="" />
+        </div>
+
+        <div class="article-section"> 
+            <img src="./img/hardware.png" alt="" />
+            <div class="article-section-text">
+                <h2> Tailored Hardware Solutions </h2>
+                <p> We use cutting edge technology to streamline your business. </p>
+                <button> Hardware </button>
+            </div>
+        </div>
+
+        <div class="article-section"> 
+            <div class="article-section-text">
+                <h2> 24/7 Support Helpdesk </h2>
+                <p> Our mediocre helpdesk isn't much, but it'll get the job done.  </p>
+                <button> Helpdesk </button>
+            </div>
+            <img src="./img/helpdesk.png" alt="" />
+        </div>
+
     </article>
+    <section>
+        <div class="customer-testimonies">
+            <div class="testimony-card">
+                <h3> Dwight Shrute </h3>
+                <p> Knight's Code made a beautiful website for my beet farm. I really appreciate the work they did. I'm
+                    attracting more customers than ever. </p>
+            </div>
+            <div class="testimony-card">
+                <h3> Jim Halpert </h3>
+                <p> We needed an extensive web application and Knight's Code certainly delivered. </p>
+            </div>
+            <div class="testimony-card">
+                <h3> Michael Scott </h3>
+                <p> I'm still amazed by how awesome the website they made for me is. So cool. </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+
+            <p> Request A Free Consultation Today </p> 
+
+            <button id="call-button"> GIVE US A CALL </button>
+    
+    </section>
+    
     <!-- Quick contact area and copyright information -->
     <footer>
         <small> Copyright &copy; 2021 Knight's Code. All Rights Reserved. </small>
     </footer>
 
 </body>
+
 </html>
