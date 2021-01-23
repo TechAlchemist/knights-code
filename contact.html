@@ -6,34 +6,96 @@ This web page contains the home of Web Development Agency, Knight's Code
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knight's Code</title>
     <link rel="stylesheet" href="style.css">
+    <!-- CDN needed for the icons in the nav bar  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-    <!-- Organization Title and Logo -->
-    <header>
-        <h1> Knight's Code </h1>
-        <img src="./img/logo.png" alt="Pixelated Knight with Binary Overlay. " />
-    </header>
-    <!-- Main Site Navigation -->
-    <nav> 
-        <ul> <a href="index.html"> Home </a> </ul>
-        <ul> <a href="about.html"> About Us </a> </ul>
-        <ul> <a href="services.html"> Services </a> </ul>
-        <ul> <a href="gallery.html"> Gallery </a> </ul>
-        <ul> <a href="contact.html"> Contact Us </a> </ul>
-    </nav>
-    <!-- Content area :: What we do. -->
-    <article>
 
+<body>
+    <!-- Main Site Navigation -->
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <span class="material-icons"> home </span>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <span class="material-icons"> info </span>
+                    About
+                </a> 
+            </li>
+            <li>    
+                <a href="contact.html" class="active">
+                    <span class="material-icons"> chat </span>
+                    Contact
+                </a> 
+            </li>
+            <li>
+                <a href="gallery.html">
+                    <span class="material-icons"> collections </span>
+                    Gallery
+                </a> 
+            </li>
+            <li>
+                <a href="services.html">
+                    <span class="material-icons"> home_repair_service </span>
+                    Services
+                </a>
+            </li>
+         </ul>
+    </nav>
+    <!-- Website banner or article iamge -->
+
+    <header>
+        <h1> Contact Us Today  </h1>
+    </header>
+
+    <!-- Showcase -->
+    <article>
+        <h2> We are available 24/7!</h2>
+        <p> Feel free to reach out with any questions you might have. Our techs will respond within the next hour to answer all your questions. </p>
+        <form>
+            <fieldset>
+                <legend> Your Information </legend>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="business">Business Name</label><br>
+                <input type="text" id="business" name="business">
+            </fieldset>
+            
+            <fieldset>
+                <legend> Contact Method </legend>
+                <input type="radio" id="phone" name="contactMethod" value="phone">
+                <label for="phone">Phone</label><br>
+                <input type="radio" id="email" name="contactMethod" value="email">
+                <label for="email">Email</label><br>
+                <input type="radio" id="either" name="contactMethod" value="either">
+                <label for="either">Either</label>
+            </fieldset>
+
+            <fieldset>
+                <legend> What do you want to talk about? </legend>
+                <label for="topic">Topic</label><br>
+                <textarea id="topic" rows="4" cols="25">...</textarea>
+            </fieldset>
+            
+            <button type="submit"> Submit </button>
+        </form>
     </article>
+    
     <!-- Quick contact area and copyright information -->
     <footer>
         <small> Copyright &copy; 2021 Knight's Code. All Rights Reserved. </small>
     </footer>
 
 </body>
+
 </html>

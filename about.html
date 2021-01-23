@@ -6,34 +6,82 @@ This web page contains the home of Web Development Agency, Knight's Code
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knight's Code</title>
     <link rel="stylesheet" href="style.css">
+    <!-- CDN needed for the icons in the nav bar  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-    <!-- Organization Title and Logo -->
-    <header>
-        <h1> Knight's Code </h1>
-        <img src="./img/logo.png" alt="Pixelated Knight with Binary Overlay. " />
-    </header>
-    <!-- Main Site Navigation -->
-    <nav> 
-        <ul> <a href="index.html"> Home </a> </ul>
-        <ul> <a href="about.html"> About Us </a> </ul>
-        <ul> <a href="services.html"> Services </a> </ul>
-        <ul> <a href="gallery.html"> Gallery </a> </ul>
-        <ul> <a href="contact.html"> Contact Us </a> </ul>
-    </nav>
-    <!-- Content area :: What we do. -->
-    <article>
 
+<body>
+    <!-- Main Site Navigation -->
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <span class="material-icons"> home </span>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="about.html" class="active">
+                    <span class="material-icons"> info </span>
+                    About
+                </a> 
+            </li>
+            <li>    
+                <a href="contact.html">
+                    <span class="material-icons"> chat </span>
+                    Contact
+                </a> 
+            </li>
+            <li>
+                <a href="gallery.html">
+                    <span class="material-icons"> collections </span>
+                    Gallery
+                </a> 
+            </li>
+            <li>
+                <a href="services.html">
+                    <span class="material-icons"> home_repair_service </span>
+                    Services
+                </a>
+            </li>
+         </ul>
+    </nav>
+
+    <!-- Current page indicator -->
+    <header>
+        <h1> About Us  </h1>
+    </header>
+
+    <!-- Showcase -->
+    <article class="about-us-article">
+        <img src="./img/about-us.png" alt="Two people working on a server" />
+        <h2> Our Story </h2>
+        <p> Knight's Code was founded in 2021 amid the COVID-19 pandemic in response to the flurry of workers moving to remote work. Knight's Code has stepped up to help small and medium businesses equip themselves for the technological demands of running their businesses from anywhere in the world. We pride ourselves on the ability to customize and provide support for ALL of our customers cyber needs. </p>
     </article>
+
+    <!-- Customer Testimonies -->
+    <section>
+        <h2 class="testimony-title"> Meet Our CEO </h2>
+        <div class="customer-testimonies">
+            <div class="testimony-card">
+                <h3> Hades Myers </h3>
+                <img src="./img/hades.jpg" alt="Dog looking up." />
+                <p> Hades is dedicated to making sure you get the best possible experience with Knight's Code. He promises your total satisfaction or it's your money back.  </p>
+            </div>
+        </div>
+    </section>
+    
     <!-- Quick contact area and copyright information -->
     <footer>
         <small> Copyright &copy; 2021 Knight's Code. All Rights Reserved. </small>
     </footer>
 
 </body>
+
 </html>

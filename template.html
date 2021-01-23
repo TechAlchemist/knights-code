@@ -6,34 +6,80 @@ This web page contains the home of Web Development Agency, Knight's Code
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knight's Code</title>
     <link rel="stylesheet" href="style.css">
+    <!-- CDN needed for the icons in the nav bar  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Organization Title and Logo -->
-    <header>
-        <h1> Knight's Code </h1>
-        <img src="./img/logo.png" alt="Pixelated Knight with Binary Overlay. " />
-    </header>
     <!-- Main Site Navigation -->
-    <nav> 
-        <ul> <a href="index.html"> Home </a> </ul>
-        <ul> <a href="about.html"> About Us </a> </ul>
-        <ul> <a href="services.html"> Services </a> </ul>
-        <ul> <a href="gallery.html"> Gallery </a> </ul>
-        <ul> <a href="contact.html"> Contact Us </a> </ul>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" class="active">
+                    <span class="material-icons"> home </span>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <span class="material-icons"> info </span>
+                    About
+                </a> 
+            </li>
+            <li>    
+                <a href="contact.html">
+                    <span class="material-icons"> chat </span>
+                    Contact
+                </a> 
+            </li>
+            <li>
+                <a href="gallery.html">
+                    <span class="material-icons"> collections </span>
+                    Gallery
+                </a> 
+            </li>
+            <li>
+                <a href="services.html">
+                    <span class="material-icons"> home_repair_service </span>
+                    Services
+                </a>
+            </li>
+         </ul>
     </nav>
-    <!-- Content area :: What we do. -->
+    <!-- Website banner or article iamge -->
+
+    <header>
+        <img src="./img/banner.png" id="banner" alt="Knight's Code banner image. " />
+        <h1> All Your IT Needs From One Place  </h1>
+    </header>
+
+    <!-- Showcase -->
     <article>
 
     </article>
+
+    <!-- Extra Content -->
+    <section>
+
+    </section>
+
+    <!-- Call to action -->
+    <section class="call-to-action">
+            <h3> Request A Free Consultation Today </h3> 
+            <button id="call-button"> SEND US AN EMAIL </button>
+    </section>
+    
     <!-- Quick contact area and copyright information -->
     <footer>
         <small> Copyright &copy; 2021 Knight's Code. All Rights Reserved. </small>
     </footer>
 
 </body>
+
 </html>

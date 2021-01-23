@@ -12,6 +12,7 @@ This web page contains the home of Web Development Agency, Knight's Code
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knight's Code</title>
     <link rel="stylesheet" href="style.css">
+    <!-- CDN needed for the icons in the nav bar  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -19,51 +20,58 @@ This web page contains the home of Web Development Agency, Knight's Code
     <!-- Main Site Navigation -->
     <nav>
         <ul>
-            <a href="index.html" class="active">
-                <span class="material-icons"> home </span>
-                Home
-            </a>
-        </ul>
-        <ul> <a href="about.html">
-                <span class="material-icons"> info </span>
-                About
-            </a> </ul>
-        <ul> <a href="contact.html">
-                <span class="material-icons"> chat </span>
-                Contact
-            </a> </ul>
-        <ul> <a href="gallery.html">
-                <span class="material-icons"> collections </span>
-                Gallery
-            </a> </ul>
-        <ul> <a href="services.html">
-                <span class="material-icons"> home_repair_service </span>
-                Services
-            </a> </ul>
+            <li>
+                <a href="index.html" class="active">
+                    <span class="material-icons"> home </span>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <span class="material-icons"> info </span>
+                    About
+                </a> 
+            </li>
+            <li>    
+                <a href="contact.html">
+                    <span class="material-icons"> chat </span>
+                    Contact
+                </a> 
+            </li>
+            <li>
+                <a href="gallery.html">
+                    <span class="material-icons"> collections </span>
+                    Gallery
+                </a> 
+            </li>
+            <li>
+                <a href="services.html">
+                    <span class="material-icons"> home_repair_service </span>
+                    Services
+                </a>
+            </li>
+         </ul>
     </nav>
-    <!-- Organization Title and Logo -->
-    <section>
-        <img src="./img/banner.png" id="banner" alt="Knight's Code banner image. " />
-    </section>
+    <!-- Website banner or article iamge -->
+
     <header>
-        <h1> Knight's Code </h1>
+        <img src="./img/banner.png" id="banner" alt="Knight's Code banner image. " />
+        <h1> All Your IT Needs From One Place  </h1>
     </header>
-    <!-- Content area :: Customer Testimonies  -->
 
-    <!-- Content area :: What we do. -->
+    <!-- Showcase of our main services -->
     <article>
-
         <div class="article-section"> 
             <div class="article-section-text">
                 <h2> Custom Business Software Solutions </h2>
                 <p> We take you problems and craft best-practice software solutions. </p>
                 <button> Software </button>
             </div>
-            <img src="./img/software.png" alt="" />
+            <img src="./img/software.png" alt="Image of pair programming." />
         </div>
 
         <div class="article-section"> 
-            <img src="./img/hardware.png" alt="" />
+            <img src="./img/hardware.png" alt="Man working on server. " />
             <div class="article-section-text">
                 <h2> Tailored Hardware Solutions </h2>
                 <p> We use cutting edge technology to streamline your business. </p>
@@ -77,34 +85,36 @@ This web page contains the home of Web Development Agency, Knight's Code
                 <p> Our mediocre helpdesk isn't much, but it'll get the job done.  </p>
                 <button> Helpdesk </button>
             </div>
-            <img src="./img/helpdesk.png" alt="" />
+            <img src="./img/helpdesk.png" alt="People working on helpdesk. " />
         </div>
-
     </article>
+
+    <!-- Customer Testimonies -->
     <section>
+        <h2 class="testimony-title"> Customer Testimonies </h2>
         <div class="customer-testimonies">
             <div class="testimony-card">
                 <h3> Dwight Shrute </h3>
-                <p> Knight's Code made a beautiful website for my beet farm. I really appreciate the work they did. I'm
-                    attracting more customers than ever. </p>
+                <img src="./img/dwight_shrute.jpeg" alt="Dwight Shrute" />
+                <p> The Knight's Code did a great job of providing my beet farm with modern IT solutions. Our wireless capabilities have let us become the number one provider in authentic small family owned beet forms for miles. </p>
             </div>
             <div class="testimony-card">
                 <h3> Jim Halpert </h3>
-                <p> We needed an extensive web application and Knight's Code certainly delivered. </p>
+                <img src="./img/jim_halpert.jpg" alt="Jim Halpert" />
+                <p> We needed an extensive and complex sports management web application in a very short amount of time. Knight's Code delivered a professional and easy to use web application. Thanks! </p>
             </div>
             <div class="testimony-card">
                 <h3> Michael Scott </h3>
-                <p> I'm still amazed by how awesome the website they made for me is. So cool. </p>
+                <img src="./img/michael_scott.jpg" alt="Michael Scott" />
+                <p> Their 24 hour support is so helpful for incident resolution. I feel great knowing trained individuals will be available whenever I call. </p>
             </div>
         </div>
     </section>
 
+    <!-- Call to action -->
     <section class="call-to-action">
-
-            <p> Request A Free Consultation Today </p> 
-
-            <button id="call-button"> GIVE US A CALL </button>
-    
+            <h3> Request A Free Consultation Today </h3> 
+            <button id="call-button"> SEND US AN EMAIL </button>
     </section>
     
     <!-- Quick contact area and copyright information -->
