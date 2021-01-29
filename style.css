@@ -56,7 +56,6 @@ nav ul a:hover {
 body {
     font-family: 'Ubuntu', sans-serif;
     background-color: #f4f7fc;
-    width: 100%;
 }
 
 article {
@@ -288,6 +287,16 @@ tr:nth-child(even) {
         justify-content: center;
     }
 
+    .about-us-article img {
+        width: 100%;
+    }
+
+    .about-us-article p {
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     .customer-testimonies {
         flex-direction: column;
         align-items: center;
@@ -308,7 +317,19 @@ tr:nth-child(even) {
         padding: 5px;
     } 
 
-     footer {
+    .table-section {
+        /* width: 100px; */
+    }
+
+    table {
+        padding: 2px;
+    }
+
+    td {
+        padding: 0;
+    }
+
+    footer {
         padding: 50px 0px 50px 0px;
     }
   }
