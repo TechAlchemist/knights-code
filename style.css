@@ -276,6 +276,10 @@ tr:nth-child(even) {
         flex-direction: column-reverse;
     }
 
+    #article-section-flip-second {
+        flex-direction: column-reverse;
+    }
+
     .article-section-text {
         margin: 0;
         padding: 0;
@@ -316,10 +320,6 @@ tr:nth-child(even) {
 
         padding: 5px;
     } 
-
-    .table-section {
-        /* width: 100px; */
-    }
 
     table {
         padding: 2px;
