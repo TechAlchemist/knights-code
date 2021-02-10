@@ -10,12 +10,15 @@ foreach($_GET as $key =>$value){
     echo $key . ": " . $value . "<br/>";
 }
 
+
 ?>
-<button> Continue ></button>
+<button onClick="leaveForm()"> Continue ></button>
 </body>
 
 <script>
-
+    function leaveForm() {
+        window.location.replace("https://knights-code.herokuapp.com/");
+    }
 </script>
 
 </html> 
