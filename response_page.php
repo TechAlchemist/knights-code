@@ -11,5 +11,11 @@ foreach($_GET as $key =>$value){
 }
 
 ?>
+<button> Continue ></button>
 </body>
+
+<script>
+
+</script>
+
 </html> 
