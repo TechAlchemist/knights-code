@@ -1,6 +1,6 @@
 <!--
 Brandon Myers
-1.23.2020
+2.01.2020
 This web page contains the home of Web Development Agency, Knight's Code
 -->
 
@@ -65,7 +65,7 @@ This web page contains the home of Web Development Agency, Knight's Code
         <form>
             <fieldset>
                 <legend> Your Information </legend>
-                <label for="name">Name</label><br>
+                <label for="name">Full Name of Contact</label><br>
                 <input type="text" id="name" name="name"><br>
                 <label for="business">Business Name</label><br>
                 <input type="text" id="business" name="business">
@@ -79,6 +79,18 @@ This web page contains the home of Web Development Agency, Knight's Code
                 <label for="email">Email</label><br>
                 <input type="radio" id="either" name="contactMethod" value="either">
                 <label for="either">Either</label>
+            </fieldset>
+
+            <fieldset>
+                <legend> Services Interested In? </legend>
+                <label for="service">Area of Service</label>
+                <select id="service" name="service">
+                  <option value="-">-</option>
+                  <option value="hardware">Hardware</option>
+                  <option value="software">Software</option>
+                  <option value="support">Support</option>
+                  <option value="misc">Misc...</option>
+                </select>
             </fieldset>
 
             <fieldset>
